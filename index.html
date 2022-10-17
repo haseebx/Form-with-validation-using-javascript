@@ -14,8 +14,6 @@
 <body>
 
     <div class="container">
-
-
         <h2 class="text-center" id="h">Registration Form</h2>
         <form action="">
             <div class="row g-3">
@@ -23,19 +21,19 @@
                     <label for="" class="form-label">
                         <h5>First Name</h5>
                     </label>
-                    <input type="text" placeholder="Enter First Name" class="form-control mb-4">
+                    <input type="text" placeholder="Enter First Name" class="form-control mb-4" id="fname">
                 </div>
                 <div class="col-4 ">
                     <label for="" class="form-label">
                         <h5>Last Name</h5>
                     </label>
-                    <input type="text" placeholder="Enter Last Name" class="form-control mb-4">
+                    <input type="text" placeholder="Enter Last Name" class="form-control mb-4" id="Lname">
                 </div>
                 <div class="col-4 ">
                     <label for="" class="form-label">
                         <h5>Username</h5>
                     </label>
-                    <input type="text" placeholder="Auto Gen..." class="form-control mb-4">
+                    <input type="text" placeholder="Auto Gen..." class="form-control mb-4" id="username">
                 </div>
             </div>
             <div class="row g-3">
@@ -86,16 +84,9 @@
                     <input type="text" placeholder="Enter Number" class="form-control mb-4">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger mt-5 " id="b"> Submit</button>
-
-
-
-
-
-
+            <button type="submit" class="btn btn-danger mt-5 " id="b" onclick="is_Vaild(); return false">
+                Submit</button>
         </form>
-
-
     </div>
 
 
