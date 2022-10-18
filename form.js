@@ -1,20 +1,24 @@
 
 function is_Vaild() {
+    let check=false;
     let fn = document.getElementById("fname").value;
     let ln = document.getElementById("Lname").value;
     // let un= document.getElementById("username");
 
     if (is_len_vaild(fn, 3, 8) == true) {
-        is_len_vaild(ln, 3, 8);
+        check= is_len_vaild(ln, 3, 8);
+        
     }
 
    check_age();
    check_mail();
-  check_pass();
-  check_contact();
-  if(check_age() && check_pass() && check_mail()&& check_contact()  ==true){
+   check_pass();
+   check_contact();
+  
+   if(check_age() && check_pass() && check_mail()&& check_contact() &&check ==true){
     alert("Form is sucessfully Submited...");
   }
+
 }
 
 function is_len_vaild(inputtext, minlen, maxlen) {
@@ -35,6 +39,7 @@ function is_len_vaild(inputtext, minlen, maxlen) {
     else {
         return true;
     }
+    
 }
 
 function genrate_username() {
