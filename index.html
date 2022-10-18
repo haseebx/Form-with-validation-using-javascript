@@ -33,39 +33,40 @@
                     <label for="" class="form-label">
                         <h5>Username</h5>
                     </label>
-                    <input type="text" placeholder="Auto Gen..." class="form-control mb-4" id="username">
+                    <input type="text" placeholder="Auto Gen..." class="form-control mb-4" id="username"
+                        ondblclick="genrate_username();">
                 </div>
             </div>
             <div class="row g-3">
-                <div class="col-1">
+                <div class="col-1 col-sm-2">
                     <label for="" class="form-label">
                         <h5>Age</h5>
                     </label>
-                    <input type="number" class="form-control" placeholder="Age">
+                    <input type="number" class="form-control" placeholder="Age" id="age">
                 </div>
 
                 <div class="col-4">
                     <label for="" class="form-label">
                         <h5>E-mail</h5>
                     </label>
-                    <input type="email" placeholder="Enter E-mail@gmail.com" class="form-control mb-4">
+                    <input type="email" placeholder="Enter E-mail@gmail.com" class="form-control mb-4" id="email">
                 </div>
 
                 <div class="col-4">
                     <label for="" class="form-label">
                         <h5>Password</h5>
                     </label>
-                    <input type="password" placeholder="Enter Password" class="form-control mb-4">
+                    <input type="password" placeholder="Enter Password" class="form-control mb-4" id="pass">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <label for="" class="form-label">
                         <h5>Select Department</h5>
                     </label>
                     <div class="dropdown">
-                        <button class="btn btn-success dropdown-toggle px-4" type="button" data-bs-toggle="dropdown"
+                        <button class="btn btn-success dropdown-toggle px-4 " type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Select Department
                         </button>
@@ -81,16 +82,13 @@
                     <label for="" class="form-label">
                         <h5>Contact no</h5>
                     </label>
-                    <input type="text" placeholder="Enter Number" class="form-control mb-4">
+                    <input type="text" placeholder="Enter Number" class="form-control mb-4" id="contact">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger mt-5 " id="b" onclick="is_Vaild(); return false">
+            <button type="submit" class="btn btn-danger mt-5 " id="b" onclick="is_Vaild();">
                 Submit</button>
         </form>
     </div>
-
-
-
 
 
     <script src="form.js"> </script>
